@@ -655,3 +655,10 @@ a {
     transform: rotate(1800deg);
   }
 }
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
