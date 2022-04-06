@@ -662,3 +662,10 @@ a {
 .hide {
   display: none;
 }
+
+.bBlack {
+  border: 1px solid crimson;
+}
+.pRed {
+  color: red;
+}
