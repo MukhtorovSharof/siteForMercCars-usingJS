@@ -48,48 +48,48 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // MODAL---------------------------------------
 
-  const allModalBtn = document.querySelectorAll("[data-modal]"),
-    modal = document.querySelector(".modal"),
-    modalClose = document.querySelector(".modal__close");
+  // const allModalBtn = document.querySelectorAll("[data-modal]"),
+  //   modal = document.querySelector(".modal"),
+  //   modalClose = document.querySelector(".modal__close");
 
-  allModalBtn.forEach((btn) => {
-    btn.addEventListener("click", openModal);
-  });
+  // allModalBtn.forEach((btn) => {
+  //   btn.addEventListener("click", openModal);
+  // });
 
-  modalClose.addEventListener("click", closeModal);
+  // modalClose.addEventListener("click", closeModal);
 
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
+  // modal.addEventListener("click", (e) => {
+  //   if (e.target === modal) {
+  //     closeModal();
+  //   }
+  // });
 
-  const modalTimer = setTimeout(openModal, 5000);
+  // const modalTimer = setTimeout(openModal, 5000);
 
-  function openModal() {
-    modal.classList.remove("hide");
-    modal.classList.add("show");
-    document.body.style.overflow = "hidden";
-    clearTimeout(modalTimer);
-  }
+  // function openModal() {
+  //   modal.classList.remove("hide");
+  //   modal.classList.add("show");
+  //   document.body.style.overflow = "hidden";
+  //   clearTimeout(modalTimer);
+  // }
 
-  function closeModal() {
-    modal.classList.remove("show");
-    modal.classList.add("hide");
-    document.body.style.overflow = "";
-  }
+  // function closeModal() {
+  //   modal.classList.remove("show");
+  //   modal.classList.add("hide");
+  //   document.body.style.overflow = "";
+  // }
 
-  function showMyModalByScroll() {
-    if (
-      window.pageYOffset + document.documentElement.clientHeight >=
-      document.documentElement.scrollHeight
-    ) {
-      openModal();
-      window.removeEventListener("scroll", showMyModalByScroll);
-    }
-  }
+  // function showMyModalByScroll() {
+  //   if (
+  //     window.pageYOffset + document.documentElement.clientHeight >=
+  //     document.documentElement.scrollHeight
+  //   ) {
+  //     openModal();
+  //     window.removeEventListener("scroll", showMyModalByScroll);
+  //   }
+  // }
 
-  window.addEventListener("scroll", showMyModalByScroll);
+  // window.addEventListener("scroll", showMyModalByScroll);
 
   // DATA------------------------------------------------
 
@@ -194,7 +194,7 @@ window.addEventListener("DOMContentLoaded", () => {
     luxury small car rankings. It's powerful and upscale, but it has
     so-so handli...`,
     100,
-    ".menu .container",
+    ".menu .container"
     //"pRed",
     //"bBlack"
   ).render();
@@ -207,7 +207,7 @@ window.addEventListener("DOMContentLoaded", () => {
     interior, and easy-to-use tech features, but it also has a firm
     ride and a ..`,
     500,
-    ".menu .container",
+    ".menu .container"
     //"pRed",
     //"bBlack"
   ).render();
@@ -219,8 +219,50 @@ window.addEventListener("DOMContentLoaded", () => {
     `The German luxury car-manufacturer has been around for more than a
     century, having elegantly drifted rough curves of automobile.`,
     200,
-    ".menu .container",
+    ".menu .container"
     //"pRed",
     //"bBlack"
   ).render();
+
+  //SLIDER------------------------------------------
+
+  const slides = document.querySelectorAll(".offer__slide"),
+    prevBtn = document.querySelector(".offer__slider-prev"),
+    nextBtn = document.querySelector(".offer__slider-next"),
+    current = document.querySelector("#current"),
+    total = document.querySelector("#total");
+
+  let slideIndex = 1;
+  show(slideIndex);
+  function show(s) {
+    if (s > slides.length) {
+      slideIndex = 1;
+    }
+    if (s < 1) {
+      slideIndex = slides.length;
+    }
+    slides.forEach((item) => (item.style.cssText = "display: none"));
+    slides[slideIndex - 1].style.display = "block";
+    if (slideIndex < 10) {
+      current.textContent = `0${slideIndex}`;
+    } else {
+      current.textContent = slideIndex;
+    }
+  }
+
+  function sliderPlus (s) {
+    show(slideIndex += 1)
+  }
+
+  function sliderMinus (s) {
+    show(slideIndex -= 1)
+  }
+
+  prevBtn.addEventListener("click", () => {
+    sliderMinus(-1)
+  })
+
+  nextBtn.addEventListener("click", () => {
+    sliderPlus()
+  })
 });
