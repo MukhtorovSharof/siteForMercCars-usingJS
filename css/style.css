@@ -638,7 +638,7 @@ a {
   height: 0;
   margin: 8px;
   box-sizing: border-box;
-  border: 50px solid #fff;
+  border: 32px solid #fff;
   border-color: #fff transparent #fff transparent;
   animation: lds-hourglass 1.2s infinite;
 }
@@ -655,17 +655,16 @@ a {
     transform: rotate(1800deg);
   }
 }
-
 .show {
   display: block;
 }
 .hide {
   display: none;
 }
-
-.bBlack {
+.black {
+  background-color: black;
   border: 1px solid crimson;
 }
-.pRed {
+.red {
   color: red;
 }
