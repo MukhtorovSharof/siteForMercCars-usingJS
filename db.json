@@ -5,22 +5,63 @@
       "altimg": "vegy",
       "title": "2021 Mercedes Benz S-Class",
       "descr": "The 2021 Mercedes-Benz C-Class finishes in the top half of our luxury small car rankings. It's powerful and upscale, but it has so-so handli...",
-      "price": 199.0
+      "price": 199
     },
     {
       "img": "img/tabs/2.jpg",
       "altimg": "vegy",
       "title": "2021 Mercedes Benz S-Class",
       "descr": "The 2021 Mercedes-Benz C-Class finishes in the top half of our luxury small car rankings. It's powerful and upscale, but it has so-so handli...",
-      "price": 199.0
+      "price": 199
     },
     {
       "img": "img/tabs/3.jpg",
       "altimg": "vegy",
       "title": "2021 Mercedes Benz S-Class",
       "descr": "The 2021 Mercedes-Benz C-Class finishes in the top half of our luxury small car rankings. It's powerful and upscale, but it has so-so handli...",
-      "price": 199.0
+      "price": 199
     }
   ],
-  "requests": []
+  "requests": [
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 1
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 2
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666ddfdfsf",
+      "id": 3
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 4
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 5
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 6
+    },
+    {
+      "name": "sharof",
+      "phone": "dadd",
+      "id": 7
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 8
+    }
+  ]
 }
