@@ -141,25 +141,38 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // CLASS CONSTRUCTOR---------------------------------------
 
-  const getResourse = async (url) => {
-    const res = await fetch(url);
+  // const getResourse = async (url) => {
+  //   const res = await fetch(url);
 
-    if (!res.ok) {
-      throw new Error(`Could not fetch ${url}, status: ${res.status}`);
-    }
+  //   if (!res.ok) {
+  //     throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+  //   }
 
-    return await res.json();
-  };
+  //   return await res.json();
+  // };
 
-  getResourse("http://localhost:3000/menu").then((data) => {
-    data.forEach(({ img, altimg, title, descr, price }) => {
+  // getResourse("http://localhost:3000/menu").then((data) => {
+  //   data.forEach(({ img, altimg, title, descr, price }) => {
+  //     new CarCard(
+  //       img,
+  //       altimg,
+  //       title,
+  //       descr,
+  //       price,
+  //       ".menu .container",
+  //     ).render();
+  //   });
+  // });
+
+  axios.get("http://localhost:3000/menu").then((data) => {
+    data.data.forEach(({ img, altimg, title, descr, price }) => {
       new CarCard(
         img,
         altimg,
         title,
         descr,
         price,
-        ".menu .container",
+        ".menu .container"
       ).render();
     });
   });
@@ -205,44 +218,6 @@ window.addEventListener("DOMContentLoaded", () => {
       this.parent.append(element);
     }
   }
-
-  // new CarCard(
-  //   "img/tabs/1.jpg",
-  //   "vegy",
-  //   "2021 Mercedes-Benz C-Class",
-  //   `The 2021 Mercedes-Benz C-Class finishes in the top half of our
-  //   luxury small car rankings. It's powerful and upscale, but it has
-  //   so-so handli...`,
-  //   100,
-  //   ".menu .container"
-  //   //"red",
-  //   //"black"
-  // ).render();
-
-  // new CarCard(
-  //   "img/tabs/2.jpg",
-  //   "elite",
-  //   "2021 Mercedes-Benz CLA-Class",
-  //   `The 2021 Mercedes-Benz CLA offers punchy powertrains, an elegant
-  //   interior, and easy-to-use tech features, but it also has a firm
-  //   ride and a ..`,
-  //   500,
-  //   ".menu .container"
-  //   //"red",
-  //   //"black"
-  // ).render();
-
-  // new CarCard(
-  //   "img/tabs/3.jpg",
-  //   "post",
-  //   "2021 Mercedes-Benz SCLA-Class",
-  //   `The German luxury car-manufacturer has been around for more than a
-  //   century, having elegantly drifted rough curves of automobile.`,
-  //   200,
-  //   ".menu .container"
-  //   //"red",
-  //   //"black"
-  // ).render();
 
   //SLIDER FIRST WAY(EASY)------------------------------------------
 

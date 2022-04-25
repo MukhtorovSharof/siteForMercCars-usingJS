@@ -8,14 +8,14 @@
       "price": 199
     },
     {
-      "img": "img/tabs/2.jpg",
+      "img": "img/tabs/1.jpg",
       "altimg": "vegy",
       "title": "2021 Mercedes Benz S-Class",
       "descr": "The 2021 Mercedes-Benz C-Class finishes in the top half of our luxury small car rankings. It's powerful and upscale, but it has so-so handli...",
       "price": 199
     },
     {
-      "img": "img/tabs/3.jpg",
+      "img": "img/tabs/1.jpg",
       "altimg": "vegy",
       "title": "2021 Mercedes Benz S-Class",
       "descr": "The 2021 Mercedes-Benz C-Class finishes in the top half of our luxury small car rankings. It's powerful and upscale, but it has so-so handli...",
@@ -62,6 +62,106 @@
       "name": "sharof",
       "phone": "+998997007666",
       "id": 8
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 9
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 10
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 11
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 12
+    },
+    {
+      "name": "sharof",
+      "phone": "+998997007666",
+      "id": 13
+    },
+    {
+      "name": "Asadbek",
+      "phone": "+998997007666",
+      "id": 14
+    },
+    {
+      "name": "muxtorov",
+      "phone": "+998997007666ddfdfsf",
+      "id": 15
+    },
+    {
+      "name": "muxtorov",
+      "phone": "sfddsfdf",
+      "id": 16
+    },
+    {
+      "name": "muxtorov",
+      "phone": "sfddsfdf",
+      "id": 17
+    },
+    {
+      "name": "sefdfsdf",
+      "phone": "dadd",
+      "id": 18
+    },
+    {
+      "name": "sefdfsdf",
+      "phone": "dfsdg",
+      "id": 19
+    },
+    {
+      "name": "muxtorov",
+      "phone": "+998997007666ddfdfsf",
+      "id": 20
+    },
+    {
+      "name": "sharof1234",
+      "phone": "+998997007666",
+      "id": 21
+    },
+    {
+      "name": "Asadbek",
+      "phone": "+998997007666ddfdfsf",
+      "id": 22
+    },
+    {
+      "name": "Muhammad",
+      "phone": "3133",
+      "id": 23
+    },
+    {
+      "name": "sharof",
+      "phone": "12345",
+      "id": 24
+    },
+    {
+      "name": "sefdfsdf",
+      "phone": "1234567",
+      "id": 25
+    },
+    {
+      "name": "1234567890",
+      "phone": "123456789",
+      "id": 26
+    },
+    {
+      "name": "sharof",
+      "phone": "1234567890",
+      "id": 27
+    },
+    {
+      "name": "Asadbek",
+      "phone": "997070667",
+      "id": 28
     }
   ]
 }
