@@ -1,5 +1,7 @@
 # siteForMercCars-usingJS
 
+https://salecarsappwith-api.netlify.app/
+
 #first way
 npm install (git bashda cd bilan proyektga kirib npm install qilganda node_modullani hammasini skachat qilib oladi)
 
